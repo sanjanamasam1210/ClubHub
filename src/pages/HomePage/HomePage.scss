@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 
-
 *{
     background-color:#EDCDBB ;
 }
@@ -14,6 +13,7 @@
     height:80px;
     display: flex;
     flex-wrap: wrap;
+    display:flex ;
 }
 .head-1{
     flex-basis: 60%;
