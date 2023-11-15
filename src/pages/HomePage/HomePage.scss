@@ -3,14 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 
-*{
-    background-color:#EDCDBB ;
+.Home{
+    background-color: #EEEEEE;
+    margin: 0;
 }
 #header{
     flex-basis: 100%;
     /* border-bottom: 1px solid black; */
     padding:20px;
-    height:80px;
+    // padding-bottom: 0px;
+    // height:80px;
     display: flex;
     flex-wrap: wrap;
     display:flex ;
@@ -36,4 +38,11 @@
     left:30px;
     font-size: 20px;
     font-family: 'Rajdhani', sans-serif;
+}
+.bg-img{
+    // border: 1px solid black;
+    height:630px;
+    margin: 0;
+    background-image: url("src/assets/6.jpg");
+    background-size: cover;
 }

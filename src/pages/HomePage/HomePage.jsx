@@ -11,6 +11,7 @@ const HomePage = () => {
       <div className="head"><a href="https://www.google.com/">DASHBOARD</a></div>
       <div className="head"><a href="https://www.google.com/">LOGOUT</a></div>
    </div>
+   <div className='bg-img'></div>
    
   </div>
   )

@@ -1,8 +1,26 @@
-*{
-    background-color: PINK;
+.dashboard{
+    background-color: #d1d0d0;
 }
-.add-events{
-    display: flex;
-    border:1px solid black;
-    flex-direction: column;
+.column a{
+    background-color: #eee;
+    color: #222831;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+.column {
+    width: 18rem;
+    margin-top: 60px;
+  }
+.column a:hover {
+    background-color: #ccc;
+}
+.add-events-heading{
+    background-color: #222831;
+    padding: 20px;
+    text-align: center;
+    color:#d1d0d0;
+    font-size: 18px;
 }

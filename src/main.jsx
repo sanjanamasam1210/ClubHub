@@ -10,9 +10,9 @@ import DashboardPage from './pages/DashboardPage/DashboardPage.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <LoginPage/>
-    <RegisterPage/> */}
+    <LoginPage/>
+    <RegisterPage/>
     <HomePage/>
-    {/* <DashboardPage/> */}
+    <DashboardPage/>
   </React.StrictMode>
 )
