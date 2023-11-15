@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     {/* <LoginPage/>
     <RegisterPage/> */}
-    {/* <HomePage/> */}
-    <DashboardPage/>
+    <HomePage/>
+    {/* <DashboardPage/> */}
   </React.StrictMode>
 )
