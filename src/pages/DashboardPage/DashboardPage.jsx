@@ -1,24 +1,40 @@
-import React from 'react'
-import './DashboardPage.scss'
+import React, { useState } from 'react';
+import AddEventForm from './AddEventForm';
+import AddEventImages from './AddEventImages';
+import AddEventMembers from './AddEventMembers';
+import './DashboardPage.scss';
 
 const DashboardPage = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
+
   return (
     <div className='dashboard'>
-          <div id="header">
-      <div className="head-1"><a href="https://www.google.com/">CLUBHUB</a></div>
-      <div className="head"><a href="https://www.google.com/">HOME</a></div>
-      <div className="head"><a href="https://www.google.com/">CONTACT US</a></div>
-      <div className="head"><a href="https://www.google.com/">DASHBOARD</a></div>
-      <div className="head"><a href="https://www.google.com/">LOGOUT</a></div>
-   </div>
-   <div className='column'>
+      <div id="header">
+        {/* Header content */}
+      </div>
+      <div className='column'>
         <div className='add-events-heading'>DASHBOARD</div>
-        <a className='add-events' href="/"> ADD-EVENTS </a>
-        <a className='add-events' href="/"> ADD-IMAGES </a>
-        <a className='add-events' href="/"> ADD-MEMBERS </a>
-        </div>
-    </div>
-  )
-}
+        <a className='add-events' href="#" onClick={() => handleOptionClick('ADD-EVENTS')}>
+          ADD-EVENTS
+        </a>
+        <a className='add-events' href="#" onClick={() => handleOptionClick('ADD-IMAGES')}>
+          ADD-IMAGES
+        </a>
+        <a className='add-events' href="#" onClick={() => handleOptionClick('ADD-MEMBERS')}>
+          ADD-MEMBERS
+        </a>
+      </div>
 
-export default DashboardPage
+      {/* Render the selected form based on the option */}
+      {selectedOption === 'ADD-EVENTS' && <AddEventForm />}
+      {selectedOption === 'ADD-IMAGES' && <AddEventImages />}
+      {selectedOption === 'ADD-MEMBERS' && <AddEventMembers />}
+    </div>
+  );
+};
+
+export default DashboardPage;
